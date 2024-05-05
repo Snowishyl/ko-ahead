@@ -34,8 +34,8 @@ class ChatService : IChatService {
     private var modelWeight: ModelWeight
 
     init {
-        val checkPointPath = "/home/yxyl/code/kotlin/model/stories15M.bin"
-        val tokenizerPath = "/home/yxyl/code/kotlin/model/tokenizer.bin"
+        val checkPointPath = "./model/stories15M.bin"
+        val tokenizerPath = "./model/tokenizer.bin"
 
         modelWeight = ModelWeight(checkPointPath)
         vocabulary = Vocabulary(tokenizerPath, modelWeight)
